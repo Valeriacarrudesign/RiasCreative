@@ -1,0 +1,1073 @@
+body {
+    background-color: rgb(0, 0, 0);
+    overflow-x:hidden;
+    font-size:16px;
+}
+
+.navbar {
+    position: fixed; /* relative, absolute, fixed, sticky */
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 80px;
+    border-radius: 0px 0px 40px 40px;
+    padding: 20px;
+    
+}
+
+.nav .nav-item{
+  display: none;
+  
+}
+
+@media(min-width: 768px ) {
+  .nav .nav-item{
+    display: flex;
+    
+  }
+}
+
+
+.carosello #carouselExampleIndicators img, .carosello #carouselExampleIndicators2 img{
+  object-fit: cover;
+  object-position: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-menu {
+    color: rgb(189, 189, 189);
+    font-family: Kiona;
+    font-size: 18px;
+}
+.main-menu:hover {
+    color: rgb(255, 255, 255);
+}
+
+.about {
+   /*background-image: url('Web/bg-me.jpeg') ;*/
+   height: 1000px; 
+   color:  white;
+   max-width: 100%;
+   background-size: cover;  
+}
+
+.contact { 
+  color:  white; 
+}
+.contact:hover{ 
+  color:  rgb(243, 0, 113); 
+}
+
+ .about-title {
+     font-size: 100px;    
+ }
+ .about-text {
+    margin: 80px;
+    font-size: 20px;  
+}
+
+.caption {
+  float: left;
+  position: relative;
+  overflow: hidden;
+  
+}
+.caption img {
+  float: left;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+.caption span {
+  float: left;
+  padding-top: 20px;
+  
+  height: 100%;
+  color: #ffffff;
+  font-size: 1rem;
+  margin-left: 20px;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+}
+
+
+.caption span p {
+  font-weight: bold;
+  font-size: 7rem;
+  line-height: 100px;
+  width: 100%;
+  height: auto;
+  text-transform: uppercase;
+  display: block;
+  padding-bottom: 20px;
+  margin-top: 80px;
+  font-family: elephant;  
+}
+
+@media(max-width: 1200px ) {
+  .caption span{
+    width: 100%;
+    
+  }
+  .caption .abouttext{
+    font-size: 1rem;
+    line-height: 25px;
+    text-transform: initial;
+    font-weight: normal;
+    font-family: sans-serif;
+
+  }
+
+  .caption .whois{
+    font-size: 7rem;
+    line-height: 100px;
+    width: 100%;
+  }
+
+  .contact { 
+    color:  white; 
+  }
+  .contact:hover{ 
+    color:  rgb(243, 0, 113); 
+  }
+}
+
+@media(max-width: 992px ) {
+  .caption span{
+    width: 100%;
+    
+  }
+  .caption .abouttext{
+    font-size: 1rem;
+    line-height: 20px;
+    text-transform: initial;
+    font-weight: normal;
+    font-family: sans-serif;
+
+  }
+
+  .caption .whois{
+    font-size: 6rem;
+    line-height: 90px;
+    width: 100%;
+  }
+
+  .contact { 
+    color:  white; 
+  }
+  .contact:hover{ 
+    color:  rgb(243, 0, 113); 
+  }
+}
+
+@media(max-width: 768px ) {
+  .caption span{
+    width: 100%;
+    
+  }
+  .caption .abouttext{
+    font-size: 1rem;
+    line-height: 20px;
+    text-transform: initial;
+    font-weight: normal;
+    font-family: sans-serif;
+
+  }
+
+  .caption .whois{
+    font-size: 6rem;
+    line-height: 90px;
+    width: 100%;
+  }
+  .contact { 
+    color:  white; 
+    transition: 0.5s;
+  }
+ 
+}
+
+@media(max-width: 576px ) {
+  .caption span{
+    width: 100%;
+    
+  }
+  .caption .abouttext{
+    font-size: 1rem;
+    line-height: 20px;
+    text-transform: initial;
+    font-weight: normal;
+    font-family: sans-serif;
+
+  }
+
+  .caption .whois{
+    font-size: 5rem;
+    line-height: 70px;
+    width: 100%;
+  }
+  .contact { 
+    color:  white; 
+    transition: 1s;
+  }
+}
+
+
+#logo {
+  max-height: 80px; 
+  padding: 10px 40px 10px 40px;
+  position: fixed;
+  z-index: 99999;
+}
+
+
+
+@media(max-width: 768px ) {
+  .image-container{
+    position: relative;
+  }
+
+  #logo {
+    max-height: 80px;
+    position: fixed;
+    margin: 0;
+    top: 40px;
+    left: 50%;
+    transform: translate(-50%,  -50%);
+  
+  }
+  }
+
+
+
+
+
+      /* css griglia immagini*/
+
+      @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+html body * {
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.gd {
+  position: relative;
+}
+.illustration {
+  position: relative;
+}
+.foto {
+  position: relative;
+}
+
+.gridywrap div[class*=gridy] {
+  background: #eee;
+  box-shadow: inset 0 0 0 1px #ddd;
+  padding: 15px; 
+  float: left;
+  position: relative;
+}
+
+@media screen and (max-width: 992px) {
+    .gridywrap div[class*=gridy] {
+    background: #eee;
+    box-shadow: inset 0 0 0 1px #ddd;
+    padding: 15px; 
+    float: left;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.gd:after  {
+  content: "GRAPHIC & BRAND DESIGN";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-family: kiona;
+}
+.open {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(151, 151, 151);
+  font-size: 20px;
+  text-align: center;
+  font-family: kiona;
+  z-index: 3;
+  transition: 1s;
+  cursor: pointer;
+/* vaffanculo professore fai schifo se leggi qui*/
+}
+
+.open:hover  {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: center;
+  font-family: kiona;
+  z-index: 10;
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+.gd:after  {
+  content: "GRAPHIC & BRAND DESIGN";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: center;
+  font-family: kiona;
+}
+.open-mobile  {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(192, 192, 192);
+  font-size: 15px;
+  text-align: center;
+  font-family: kiona;
+  cursor: pointer;
+  z-index: 10;
+  transition: 1s;
+}
+
+
+.open-mobile:hover  {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  text-align: center;
+  font-family: kiona;
+  z-index: 10;
+}
+}
+
+@media screen and (max-width: 992px) {
+  .gd:after  {
+    content: "GRAPHIC & BRAND DESIGN";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    line-height: 32px;
+    text-align: center;
+    font-family: kiona;
+  }
+  .open-mobile  {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(192, 192, 192);
+    font-size: 15px;
+    text-align: center;
+    font-family: kiona;
+    z-index: 10;
+    transition: 1s;
+  }
+  
+  
+  .open-mobile:hover  {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-align: center;
+    font-family: kiona;
+    z-index: 9999;
+  }
+  }
+
+.illustration:after  {
+  content: "ILLUSTRAZIONE";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-family: kiona;
+}
+.open  {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(151, 151, 151);
+  font-size: 20px;
+  text-align: center;
+  font-family: kiona;
+  z-index: 10;
+  transition: 1s;
+}
+
+.open:hover  {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: center;
+  font-family: kiona;
+  z-index: 10;
+}
+
+
+@media screen and (max-width: 768px) {
+  .illustration:after  {
+    content: "ILLUSTRAZIONE";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: kiona;
+  }
+  .open-mobile  {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(192, 192, 192);
+    font-size: 15px;
+    text-align: center;
+    font-family: kiona;
+    z-index: 10;
+    transition: 1s;
+  }
+  
+  
+  .open-mobile:hover  {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-align: center;
+    font-family: kiona;
+    z-index: 10;
+  }
+  }
+
+.foto:after  {
+  content: "FOTOGRAFIA";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-family: kiona;
+}
+.open  {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(151, 151, 151);
+  font-size: 20px;
+  text-align: center;
+  font-family: kiona;
+  z-index: 10;
+  transition: 1s;
+}
+
+.open:hover  {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  text-align: center;
+  font-family: kiona;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .foto:after  {
+    content: "FOTOGRAFIA";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    font-family: kiona;
+  }
+  .open-mobile  {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(192, 192, 192);
+    font-size: 15px;
+    text-align: center;
+    font-family: kiona;
+    z-index: 10;
+    transition: 1s;
+  }
+  
+  
+  .open-mobile:hover  {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    text-align: center;
+    font-family: kiona;
+    z-index: 10;
+  }
+  }
+
+.gridywrap .gridy-1,
+.gridywrap .gridy-2,
+.gridywrap .gridy-3 {width: 320px;
+  overflow: hidden;}
+
+.gridywrap .gridy-1 {width: 100%;}
+.gridywrap .gridy-2 {width: 100%;}
+.gridywrap .gridy-3 {width: 100%;}
+
+.gridywrap .gridyhe-1 {height: 320px;}
+.gridywrap .gridyhe-2 {height: 320px;}
+
+
+@media screen and (max-width: 992px) {
+  .gridywrap .gridyhe-2 {height: 600px;}
+  .gridywrap {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .gridywrap .gridy-1 {width: 100%;}
+  .gridywrap .gridy-2 {width: 100%;}
+  .gridywrap .gridy-3 {width: 100%;}
+}  
+
+
+  .gridywrap .gridy-1 {width: 50%;}
+  .gridywrap .gridy-2 {width: 50%;}
+  .gridywrap .gridy-3 {width: 100%;}
+}
+@media screen and (min-width: 1024px) {
+  .gridywrap .gridy-1 {width: 33.3%;}
+  .gridywrap .gridy-2 {width: 66.6%;}
+  .gridywrap .gridy-3 {width: 100%;}
+  .gridywrap .gridyhe-2 {height: 640px;}
+}
+
+/*styling*/
+.gridywrap .gridimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background-position: center center;
+  background-size: cover;
+}
+.gridywrap .gridimg img {
+  width: 100%;
+}
+.gridywrap .gridinfo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.726);
+  text-align: center;
+  transition: all 0.8s;
+}
+.gridywrap .gridinfo h3 {
+  font-size: 20px;
+  color: #fff;
+  margin: 130px 0 20px;
+  position: relative;
+}
+.gridywrap .gridinfo h3:after {
+  
+  width: 25px;
+  border-top: 4px solid #fff;
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+.gridywrap .gridinfo .gridmeta {
+  transition-delay: 0.25s;
+}
+.gridywrap .gridinfo .gridmeta p {
+  display: inline-block;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+.gridywrap .gridinfo .gridmeta p i {
+  margin-right: 5px;
+}
+.gridywrap .gridinfo .gridmeta p.gridwho {
+  margin-left: 25px;
+}
+.gridywrap .gridinfo p.gridexerpt {
+  width: 60%;
+  margin: 0 auto;
+  line-height: 22px;
+  margin-bottom: 25px;
+  color: #fff;
+  transition-delay: 0.5s;
+}
+
+.gridywrap .gridinfo * {
+  opacity: 0;
+  transition: all 0.8s;
+}
+.gridywrap .gridinfo h3 {
+  opacity: 1;
+}
+.gridywrap .gridinfo .grid-btn {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 25px;
+  border: 1px solid #fff; 
+  display: block;
+  overflow: hidden;
+}
+.gridywrap .gridinfo .grid-btn:hover {
+  width: 75px;
+  background: rgba(228, 41, 41, 0.3);
+}
+.gridywrap .gridinfo .grid-btn span {
+  opacity: 0;
+  display: none;
+  transition: opacity 0.8s;
+}
+.gridywrap .gridinfo .grid-btn:hover span {
+  opacity: 1;
+  display: inline;
+}
+.gridywrap .gridinfo .grid-btn:hover i {
+  opacity: 0;
+  display: none;
+}
+
+.gridywrap .gridinfo:hover * {
+  opacity: 0.7;
+}
+.gridywrap .gridinfo:hover p {
+  opacity: 1;
+}
+.gridywrap .gridinfo:hover {
+  background: rgba(0, 0, 0, 0.452);
+}
+.gridywrap .gridinfo:hover h3 {
+  margin-top: 70px;
+  opacity: 1;
+}
+
+.intro {
+  text-align: center;
+  padding: 25px;
+  background: #111;
+  color: #ddd;
+}
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  padding: 15px 0;
+}
+.intro p {
+  opacity: 0.5;
+  font-size: 12px;
+}
+.intro p a {
+  color: #FA8CD3;
+}
+
+.footer {
+  color: white;
+  border-radius:  100px 100px 0px 0px;
+  background-color: black;
+  margin-top: -50px;
+  padding: 10px;
+  position: relative;
+}
+
+@media screen and (min-width: 768px){ 
+  .footer {
+  background-color: #000000;
+  margin-bottom: -150px;
+  color: white;
+  border-radius:  100px 100px 0px 0px;
+  margin-top: -50px;
+  padding: 10px;
+  position: relative;
+}
+}
+
+.footer .logo{
+  padding: 50px;
+}
+
+@media screen and (max-width: 768px){ 
+.footer .logo{
+  display: none;
+}
+}
+
+.phone{
+  margin: 20px 20px 20px 70px;
+  font-size: 30px;
+  height: auto;
+  color:rgb(255, 255, 255)
+  
+}
+
+.mail{
+  margin: 0px 20px 20px 70px;
+  font-size: 30px;
+  height: auto;
+  color:rgb(255, 255, 255)
+}
+
+@media screen and (max-width: 576px){ 
+  .footer .company-details{
+    margin-top: 50px;
+    margin-left: -3px;
+}
+}
+
+
+.social {
+  position: absolute;
+  top:50%;
+  left: 60%;
+  
+}
+
+
+  
+.social span {
+  font-size: 25px;
+  font-family: kiona;
+}
+  
+
+
+.social i{
+  margin: 30px 40px 20px 0px;
+  font-size: 40px;
+  height: auto; 
+  color: rgb(235, 235, 235); 
+  transition: 1s;
+}
+
+.social i:hover{
+  color: rgb(195, 0, 255); 
+}
+
+
+
+@media(max-width: 768px ) {
+  .social {
+    position: absolute;
+    left: 15%;
+    top:50%;
+    margin: 30px 80px 30px 0px;
+    width: 40px;
+    height: auto;
+  }
+}
+
+@media(max-width: 768px ) {
+  .social span {
+    position: absolute;
+    left: 15%;
+    top:0%;
+    margin: 0px 80px 20px 0px;
+    width: 500px;
+    height: auto;
+  }
+}
+
+@media(max-width: 768px ) {
+  .social .instagram{
+    position: absolute;
+    left: 15%;
+    top:80%;
+    margin: 40px 80px 30px 0px;
+    width: 40px;
+    height: auto;
+  }
+}
+
+@media(max-width: 768px ) {
+  .social .facebook{
+    position: absolute;
+    left: 100%;
+    top:80%;
+    margin: 40px 80px 30px 40px;
+    width: 40px;
+    height: auto;
+  }
+}
+.gd-mobile {
+  position: relative;
+  background-position: cover;
+}
+
+.gridinfo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+.clear {
+  clear: both;
+}
+
+/* gestione modale graphics  */
+
+#overlay{
+  z-index:1021;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(0,0,0,.6);
+  display: flex;
+  justify-content: center;
+  -moz-backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+/* prof se non lo apri con gugol chrome sei un pijanculo*/
+  display:none; 
+  cursor: pointer;
+}
+.modal{
+  z-index: 1023;
+  left: 50%;
+  top: 50%;
+  width: 90%;
+  height: 50%;
+  display:flex;
+  justify-content: space-around;
+  transform: translate(-50%, -50%);
+  display: none;
+  overflow: visible;
+}
+.gianubaldo{
+  z-index: 1023;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row; /* fa na query mobile che diventa flex-direction: column*/
+}
+
+@media screen and (max-width: 1200px){
+.gianubaldo{
+  position: absolute;
+  top: 55%;
+  left: 57%;
+  flex-direction: column;
+}
+}
+
+.gianubaldo img{
+  border-radius: 30px;
+  width:50%;
+}
+
+@media screen and (max-width: 1200px){
+  .gianubaldo img{
+    width: 85%;
+  }
+  }
+.textContainer{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin-left: -2%;
+  padding-right: 6%;
+}
+
+@media screen and (max-width: 1200px){
+  .textContainer{
+  width: 100%;
+  padding-top: 30px;
+  margin-left: 1%;
+
+}
+}
+
+.peppino{
+  z-index: 1023;
+  color:rgb(255, 255, 255);
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: gotham;
+}
+.mariateresa{
+  z-index: 1023;
+  color:rgb(255, 255, 255);
+  
+  font-size: 15px;
+  font-weight: 100;
+  font-family: gotham; 
+}
+
+.modalCloseBtn{
+  z-index: 1022;
+  position: absolute;
+  right: -2.5%;
+  top: -5%;
+  font-size:x-large;
+  font-weight: 500;
+  z-index: 999;
+  color: rgba(245, 245, 245, 0.637);
+  font-family: gotham;
+  cursor: pointer;
+}
+@media screen and (max-width: 1200px){ 
+  .modalCloseBtn{
+    z-index: 1022;
+    position: absolute;
+    right: -2.5%;
+    top: -30%;
+    font-size:x-large;
+    font-weight: 500;
+    z-index: 999;
+    color: rgba(245, 245, 245, 0.637);
+    font-family: gotham;
+    cursor: pointer;
+  }
+}
+
+.arrowL{
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  z-index: 9999;
+  background-color: rgba(233, 233, 35, 0);
+  cursor: pointer;
+  color:rgba(255, 255, 255, 0.596);
+}
+.arrowL:after{
+  font-family: "Font Awesome 5 Free"; 
+  font-size: 30px;
+  font-weight: 900; 
+  content: "\f053";
+  transform: translate(-50%,-50%);
+  position:absolute;
+  top:50%;
+  left:50%;
+}
+
+@media screen and (max-width: 1200px){ 
+  .arrowL{
+    position: absolute;
+    top: 115%;
+    left: 0%;
+  }
+}
+
+.arrowR{
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  z-index: 9999;
+  border-radius: 50%;
+  background-color: rgba(233, 233, 35, 0);
+  cursor: pointer;
+  color:rgba(255, 255, 255, 0.596);
+}
+.arrowR:after{
+  font-family: "Font Awesome 5 Free"; 
+  font-size: 30px;
+  font-weight: 900; 
+  content: "\f054";
+  transform: translate(-50%,-50%);
+  position:absolute;
+  top:100%;
+  left:50%;
+}
+
+@media screen and (max-width: 1200px){ 
+  .arrowR{
+    position: absolute;
+    top: 115%;
+    right: 0%;
+  }
+}
+
+.open-dialog{
+  overflow: hidden;
+}
